@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werner Marc - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="logo">WERNER</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-background"></div>
+        <img class="hero-portrait" src="assets/hero/chibime.png" alt="Werner Marc portrait">
+        <p class="hero-greeting">Greetings! I'm Werner Marc</p>
+        <h1 class="hero-title">Web Developer</h1>
+        <p class="hero-subtitle">Rapid and responsive digital experiences with simple &amp; creative solutions</p>
+        <a href="#work" class="hero-cta">
+            <span class="hero-cta-label">Explore Work</span>
+            <span class="hero-cta-icon">&darr;</span>
+        </a>
+    </section>
+
+        <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-tabs" role="tablist" aria-label="About tabs">
+                <button class="about-tab is-active" role="tab" aria-selected="true" data-tab="about">About Me</button>
+                <button class="about-tab" role="tab" aria-selected="false" data-tab="experience">Experience</button>
+                <button class="about-tab" role="tab" aria-selected="false" data-tab="education">Education</button>
+            </div>
+            <div class="about-panel is-active" data-panel="about">
+                <h2 class="about-title">Summary</h2>
+                <p class="about-text">Hi! I am Werner Marc, a fresh graduate in Computer Science.</p>
+                <p class="about-text">
+                    I am passionate about building practical and user-friendly digital solutions through web development, mobile development, and UI/UX design. During my academic years and project experience, I developed skills in creating responsive interfaces, writing maintainable code, and translating real-world requirements into clear system features. I value clean design, logical workflows, and strong communication when working with teams and clients. As I begin my professional career, I am eager to contribute to meaningful projects, keep learning modern technologies, and deliver work that is reliable, organized, and focused on user needs.
+                </p>
+            </div>
+            <div class="about-panel" data-panel="experience">
+                <h2 class="about-title">Experience</h2>
+                <ul class="experience-list">
+                    <li class="experience-item">
+                        <h3 class="experience-role">Provincial Engineering Office | Province of Pangasinan</h3>
+                        <p class="experience-meta">On-the-Job Training (OJT)</p>
+                        <p class="experience-date">Completed May 6, 2026</p>
+                        <p class="experience-desc">During my OJT under the Records Division, I helped develop a multi-functioning web application used for office processes and internal coordination. This included work related to <strong>InfraLith: Provincial Engineering Office Website</strong>. I also supported daily administrative work, organized and validated records, and handled sensitive documents with strict confidentiality and accuracy. I regularly joined coordination meetings to discuss development progress, clarify feature requirements, and align technical updates with office workflow needs.</p>
+                    </li>
+                    <li class="experience-item">
+                        <h3 class="experience-role">Pangasinan State University | Campus League of Ingenious Computer Science Students</h3>
+                        <p class="experience-meta">3rd Year Representative</p>
+                        <p class="experience-date">2024 - 2025</p>
+                        <p class="experience-desc">As a student officer, I collaborated with fellow officers in planning and delivering projects and student programs related to computer science. I represented the organization in faculty-facing communications and public speaking engagements, prepared narrative reports for each activity, and participated in regular meetings and seminars. I also helped facilitate campus events by coordinating logistics, documentation, and communication among teams.</p>
+                    </li>
+                    <li class="experience-item">
+                        <h3 class="experience-role">Pangasinan State University | Freelance Developer</h3>
+                        <p class="experience-meta">Freelance Developer</p>
+                        <p class="experience-date">2024 - 2025</p>
+                        <p class="experience-desc">I handled freelance development projects by conducting requirement meetings, discussing project scope, and translating client needs into practical system features. Projects included <strong>iFood: Filipino Food Classification of Adobo &amp; Sinigang</strong>, <strong>CocoSense: Coconut Multimodal Classification Model</strong>, and <strong>Weather Monitoring System IoT &amp; Mobile App</strong>. I communicated closely with clients throughout development to confirm functionality, revisions, and delivery expectations. I built mobile applications, including implementations that integrated machine learning models, and prepared organized documentation and project manuscripts to support turnover, maintenance, and presentation.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-panel" data-panel="education">
+                <h2 class="about-title">Education</h2>
+                <p class="about-text"><strong>School:</strong> Pangasinan State University - Lingayen Campus</p>
+                <p class="about-text"><strong>Course:</strong> Bachelor of Science in Computer Science</p>
+                <p class="about-text"><strong>Year:</strong> 2022 - 2026</p>
+                <p class="about-text"><strong>Description:</strong> Built a strong foundation in software engineering, databases, algorithms, and interface development, while combining classroom learning with hands-on web and system projects.</p>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="assets/me.png" alt="Werner Marc portrait">
+        </div>
+    </section>
+
+    <section id="work" class="portfolio">
+        <div class="portfolio-header">
+            <h2 class="portfolio-title">Featured Projects</h2>
+        </div>
+        <!-- Edit each project's modal content here:
+             data-modal-title, data-modal-description, data-modal-tools (use | separator),
+             data-apk="assets/apk/your-file.apk", data-website="https://your-site.com"
+             UI only shows "See Project"; it will open website first, then APK if website is empty. -->
+        <div class="portfolio-grid">
+            <div class="project-card" role="button" tabindex="0" style="background-image: url('assets/work/infralith/Screenshot%202026-05-21%20162758.png');"
+                data-modal-title="InfraLith: Provincial Engineering Office Website"
+                data-modal-description="InfraLith is a provincial engineering office website built to present announcements, project updates, and service information in a clear and responsive layout. The implementation focuses on clean structure, accessibility, and easy navigation for both staff and public visitors."
+                data-modal-tools="HTML|CSS|JavaScript|Figma"
+                data-modal-images="assets/work/infralith/Screenshot%202026-05-21%20162758.png,assets/work/infralith/Screenshot%202026-05-21%20162920.png,assets/work/infralith/Screenshot%202026-05-21%20162937.png"
+                data-apk=""
+                data-website="https://peosystem.onrender.com/login.html">
+                <div class="project-info">
+                    <p class="project-number">01</p>
+                    <h3 class="project-title">InfraLith: Provincial Engineering Office Website</h3>
+                    <p class="project-description">
+                        A responsive government office website designed for clear information flow and public service visibility.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">Frontend</span>
+                        <span class="tag">UI Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" role="button" tabindex="0" style="background-image: url('assets/work/medichine/Physical%20Device.jpg');"
+                data-modal-title="MediChine: Automatic Medicine Dispenser"
+                data-modal-description="MediChine is an automated medicine dispensing system that combines hardware control and mobile monitoring to improve medication scheduling and adherence. The project integrates embedded logic, notification flow, and app-side status tracking for safer daily use."
+                data-modal-tools="Arduino|C++|Flutter|Firebase"
+                data-modal-images="assets/work/medichine/Physical%20Device.jpg,assets/work/medichine/Doc1-1.png,assets/work/medichine/28050ba9-8897-42e9-a135-a9c18a0ee611.jpg,assets/work/medichine/4785733e-9afa-408a-897f-cd436e2de7d8.jpg,assets/work/medichine/7c63a83e-6e88-43c3-ba29-7f716fd934e1.jpg,assets/work/medichine/bdd8b8d1-b587-4626-af00-cd105bb4f0e1.jpg"
+                data-apk="assets/work/medichine/package.zip"
+                data-website="">
+                <div class="project-info">
+                    <p class="project-number">02</p>
+                    <h3 class="project-title">MediChine: Automatic Medicine Dispenser</h3>
+                    <p class="project-description">
+                        An IoT-enabled dispenser solution with mobile monitoring for scheduled and reliable medication handling.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Mobile App</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" role="button" tabindex="0" style="background-image: url('assets/work/ifood/logo.png');"
+                data-modal-title="iFood: Filipino Food Classification of Adobo & Sinigang"
+                data-modal-description="iFood is a machine learning classification project focused on distinguishing Filipino dishes such as Adobo and Sinigang from image inputs. The workflow includes dataset preparation, model training, evaluation, and result interpretation for food recognition tasks."
+                data-modal-tools="Python|TensorFlow|OpenCV|Google Colab"
+                data-modal-images="assets/work/ifood/54fdadae-3740-4159-85ec-242041c9a9fc.jpg,assets/work/ifood/6ac96658-4368-41e8-b9cc-6ff38fbbb062.jpg,assets/work/ifood/d6b2b92c-a80d-48bd-8819-bc5123c88615.jpg"
+                data-apk=""
+                data-website="">
+                <div class="project-info">
+                    <p class="project-number">03</p>
+                    <h3 class="project-title">iFood: Filipino Food Classification of Adobo & Sinigang</h3>
+                    <p class="project-description">
+                        A computer vision model that classifies Filipino dishes using trained image recognition pipelines.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Classification</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" role="button" tabindex="0" style="background-image: url('assets/work/cocosense/image.png');"
+                data-modal-title="CocoSense: Coconut Multimodal Classification Model"
+                data-modal-description="CocoSense is a Flutter application that integrates a machine learning model for coconut classification and quality assessment. It combines mobile-first UI flow with intelligent prediction to help users capture inputs, run model-based analysis, and view clear results in-app."
+                data-modal-tools="Flutter|Python|TensorFlow Lite|Firebase"
+                data-modal-images="assets/work/cocosense/image.png"
+                data-apk=""
+                data-website="https://coco7mg.netlify.app/">
+                <div class="project-info">
+                    <p class="project-number">04</p>
+                    <h3 class="project-title">CocoSense: Coconut Multimodal Classification Model </h3>
+                    <p class="project-description">
+                        A Flutter app with integrated machine learning for coconut classification and smart result output.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">AI Model</span>
+                        <span class="tag">Multimodal</span>
+                        <span class="tag">Data Science</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-modal" id="projectModal" aria-hidden="true">
+            <div class="project-modal-card" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+                <button class="project-modal-close" id="projectModalClose" aria-label="Close dialog">&times;</button>
+                <div class="project-carousel" id="projectCarousel">
+                    <button class="project-carousel-nav prev" id="projectCarouselPrev" aria-label="Previous image">&#10094;</button>
+                    <img class="project-carousel-image" id="projectCarouselImage" src="" alt="Project preview">
+                    <button class="project-carousel-nav next" id="projectCarouselNext" aria-label="Next image">&#10095;</button>
+                    <div class="project-carousel-dots" id="projectCarouselDots"></div>
+                </div>
+                <h3 class="project-modal-title" id="projectModalTitle"></h3>
+                <p class="project-modal-description" id="projectModalDescription"></p>
+                <p class="project-modal-label">Tools Used</p>
+                <ul class="project-modal-tools" id="projectModalTools"></ul>
+                <a class="project-modal-cta" id="projectModalCta" target="_blank" rel="noopener noreferrer">See Project</a>
+            </div>
+            <div class="project-image-lightbox" id="projectImageLightbox" aria-hidden="true">
+                <img id="projectLightboxImage" src="" alt="Full project preview">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="services-content">
+            <div class="services-tabs" role="tablist" aria-label="Services tabs">
+                <button class="services-tab is-active" role="tab" aria-selected="true" data-service-tab="do">What I Do</button>
+                <button class="services-tab" role="tab" aria-selected="false" data-service-tab="use">What I Use</button>
+            </div>
+            <div class="services-panel is-active" data-service-panel="do">
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-media" style="--img: url('assets/service/Screenshot\ 2026-05-21\ 162758.png'); --tint: rgba(255, 35, 35, 0.22);"></div>
+                        <h3 class="service-name">Web Development</h3>
+                        <p class="service-description">
+                            I build websites that are clean, fast, and easy to use. with html, css, and javascript for responsive and modern designs.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-media" style="--img: url('assets/appicon.png'); --tint: rgba(60, 236, 119, 0.22);"></div>
+                        <h3 class="service-name">App Development</h3>
+                        <p class="service-description">
+                            I create mobile apps that works and look simple. Mainly use flutter for cross-platform development.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-media" style="--img: url('assets/service/Screenshot\ 2026-05-21\ 162520.png'); --tint: rgba(0, 191, 255, 0.22);"></div>
+                        <h3 class="service-name">UI/UX Design</h3>
+                        <p class="service-description">
+                            I design screens that are clear, simple, and user-friendly using Figma for wireframing and prototyping.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-media" style="--img: url('assets/coke.jpg'); --tint: rgba(255, 35, 35, 0.2);"></div>
+                        <h3 class="service-name">Graphic Design</h3>
+                        <p class="service-description">
+                            I make posters, layouts, and branding designs with canva for consistent and visually appealing results.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-media" style="--img: url('assets/service/Screenshot\ 2026-05-21\ 182602.png'); --tint: rgba(255, 170, 60, 0.2);"></div>
+                        <h3 class="service-name">Data Entry</h3>
+                        <p class="service-description">
+                            I accurately input and manage data in various formats, ensuring completeness and precision.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-media" style="--img: url('assets/art.jpg'); --tint: rgba(90, 160, 255, 0.2);"></div>
+                        <h3 class="service-name">Digital Art</h3>
+                        <p class="service-description">
+                            I create digital drawings in different styles.mainly on ibisPaintX with mobile
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-panel" data-service-panel="use">
+                <!-- Replace images by updating files in assets/skills/skill-01.svg ... skill-18.svg -->
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-item" style="--level: 92;" title="HTML"><img class="skill-icon" src="assets/html-5-svgrepo-com.svg" alt="HTML"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">92%</span></div></div>
+                    <div class="skill-item" style="--level: 90;" title="CSS"><img class="skill-icon" src="assets/css-3-svgrepo-com.svg" alt="CSS"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">90%</span></div></div>
+                    <div class="skill-item" style="--level: 86;" title="JavaScript"><img class="skill-icon" src="assets/js-svgrepo-com.svg" alt="JavaScript"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">86%</span></div></div>
+                    <div class="skill-item" style="--level: 76;" title="Bootstrap"><img class="skill-icon" src="assets/bootstrap-svgrepo-com.svg" alt="Bootstrap"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">76%</span></div></div>
+
+                    <!-- Mobile and UI -->
+                    <div class="skill-item" style="--level: 82;" title="Flutter"><img class="skill-icon" src="assets/flutter-svgrepo-com.svg" alt="Flutter"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">82%</span></div></div>
+                    <div class="skill-item" style="--level: 88;" title="Figma"><img class="skill-icon" src="assets/figma-svgrepo-com.svg" alt="Figma"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">88%</span></div></div>
+                    <div class="skill-item" style="--level: 88;" title="Android Studio"><img class="skill-icon" src="assets/android-studio-logo-2023-51ae.png" alt="Android Studio"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">88%</span></div></div>
+
+                    <!-- Backend and Data -->
+                    <div class="skill-item" style="--level: 72;" title="Node.js"><img class="skill-icon" src="assets/node-js-svgrepo-com.svg" alt="Node.js"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">72%</span></div></div>
+                    <div class="skill-item" style="--level: 70;" title="MySQL"><img class="skill-icon" src="assets/mysql-logo-svgrepo-com.svg" alt="Databases"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">70%</span></div></div>
+                    <div class="skill-item" style="--level: 69;" title="Supabase"><img class="skill-icon" src="assets/supabase-logo-png_seeklogo-435677.png" alt="Supabase"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">69%</span></div></div>
+                    <div class="skill-item" style="--level: 68;" title="API Integration"><img class="skill-icon" src="assets/FastAPI-Logo-Vector.svg-.png" alt="API Integration"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">68%</span></div></div>
+
+                    <!-- Tools and Engineering -->
+                    <div class="skill-item" style="--level: 84;" title="GitHub"><img class="skill-icon" src="assets/github-6980894_1280.png" alt="GitHub"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">84%</span></div></div>
+                    <div class="skill-item" style="--level: 80;" title="Git"><img class="skill-icon" src="assets/git-svgrepo-com.svg" alt="Git"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">80%</span></div></div>
+                    <div class="skill-item" style="--level: 74;" title="VS Code"><img class="skill-icon" src="assets/vscode-svgrepo-com.svg" alt="VS Code"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">74%</span></div></div>
+                    <div class="skill-item" style="--level: 64;" title="Firebase"><img class="skill-icon" src="assets/firebase-svgrepo-com.svg" alt="Cloud Basics"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">64%</span></div></div>
+                    <div class="skill-item" style="--level: 67;" title="Arduino IoT"><img class="skill-icon" src="assets/arduino-svgrepo-com.svg" alt="Arduino IoT"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">67%</span></div></div>
+                    <div class="skill-item" style="--level: 47;" title="Java"><img class="skill-icon" src="assets/java-svgrepo-com.svg" alt="Java"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">47%</span></div></div>
+                    <div class="skill-item" style="--level: 38;" title="Ada"><img class="skill-icon" src="assets/333-3336987_ada-programming-language-logo.png" alt="Ada"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">38%</span></div></div>
+
+                    <!-- AI and Analysis -->
+                    <div class="skill-item" style="--level: 73;" title="Python"><img class="skill-icon" src="assets/python-svgrepo-com.svg" alt="Python"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">73%</span></div></div>
+                    <div class="skill-item" style="--level: 70;" title="Hugging Face"><img class="skill-icon" src="assets/hugging-face-svgrepo-com.svg" alt="Hugging Face"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">70%</span></div></div>
+
+                    <!-- Multimedia -->
+                    <div class="skill-item" style="--level: 40;" title="SketchUp"><img class="skill-icon" src="assets/sketchup-logo-single.png" alt="SketchUp"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">40%</span></div></div>
+                    <div class="skill-item" style="--level: 72;" title="Capcut"><img class="skill-icon" src="assets/Best-video-Editing-Apps-CapCut-300x300.png" alt="Photo Editing"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">72%</span></div></div>
+                    <div class="skill-item" style="--level: 74;" title="Adobe Lightroom"><img class="skill-icon" src="assets/dmiydvog.png" alt="Adobe Lightroom"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">74%</span></div></div>
+                    <div class="skill-item" style="--level: 71;" title="Snapseed"><img class="skill-icon" src="assets/snapseed-svgrepo-com.svg" alt="Snapseed"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">71%</span></div></div>
+                    <div class="skill-item" style="--level: 75;" title="Canva"><img class="skill-icon" src="assets/kiu1badp.png" alt="KIU Asset"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">75%</span></div></div>
+                    <div class="skill-item" style="--level: 74;" title="Ibis Paint X"><img class="skill-icon" src="assets/image851141201.png" alt="Custom Asset"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">74%</span></div></div>
+                    <div class="skill-item" style="--level: 84;" title="Excel"><img class="skill-icon" src="assets/7di9k84g.png" alt="Custom Asset"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">84%</span></div></div>
+                    <div class="skill-item" style="--level: 90;" title="Word"><img class="skill-icon" src="assets/2udpzzcp.png" alt="Custom Asset"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">90%</span></div></div>
+                    <div class="skill-item" style="--level: 64;" title="Powerpoint"><img class="skill-icon" src="assets/microsoft-office-powerpoint-logo-800c.png" alt="Custom Asset"><div class="skill-level"><span class="skill-name">Proficiency</span><span class="skill-percent">64%</span></div></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2 class="contact-title">Let's Create<br>Something Amazing</h2>
+            <p class="contact-subtitle">Ready to bring your vision to life? Get in touch.</p>
+            <a class="contact-email" id="contactEmailLink">Send Email</a>
+            <div class="social-links">
+                <i class="bi bi-linkedin social-icon" data-social="linkedin" aria-label="LinkedIn"></i><i class="bi bi-github social-icon" data-social="github" aria-label="GitHub"></i><i class="bi bi-facebook social-icon" data-social="facebook" aria-label="Facebook"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">© 2026 Werner Marc. All rights reserved.</p>
+        </footer>
+
+    <script src="cursor.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <script src="animations.js"></script>
+    <script src="parallax.js"></script>
+    <script src="link.js"></script>
+    <script src="about-tabs.js"></script>
+    <script src="services-tabs.js"></script>
+    <script src="nav-active.js"></script>
+    <script src="project-modal.js"></script>
+</body>
+</html>

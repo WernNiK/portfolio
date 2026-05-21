@@ -1,0 +1,10 @@
+{
+  "contact": {
+    "email": "your-email@example.com"
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/your-profile",
+    "github": "https://github.com/your-username",
+    "facebook": "https://www.facebook.com/your-profile"
+  }
+}

@@ -1,0 +1,15 @@
+/* CSS Variables */
+:root {
+    --color-bg: #03080f;
+    --color-bg-soft: #071525;
+    --color-text: #e8eef8;
+    --color-accent: #3cec77;
+    --color-accent-deep: #20767e;
+    --color-accent-glow: rgba(60, 236, 119, 0.24);
+    --color-secondary: #08131f;
+    --color-border: #173147;
+    --color-muted: #a7b3c5;
+    --font-display: 'Source Serif 4', serif;
+    --font-body: 'Inter', sans-serif;
+    --font-ui: 'Manrope', sans-serif;
+}
