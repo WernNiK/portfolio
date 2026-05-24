@@ -5,6 +5,7 @@ const titleEl = document.getElementById('projectModalTitle');
 const descEl = document.getElementById('projectModalDescription');
 const toolsEl = document.getElementById('projectModalTools');
 const ctaEl = document.getElementById('projectModalCta');
+const messageCtaEl = document.getElementById('projectModalMessageCta');
 const carouselImageEl = document.getElementById('projectCarouselImage');
 const carouselEl = document.getElementById('projectCarousel');
 const carouselDotsEl = document.getElementById('projectCarouselDots');
@@ -119,6 +120,17 @@ projectCards.forEach((card) => {
 });
 
 if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+if (messageCtaEl) {
+    messageCtaEl.addEventListener('click', (event) => {
+        event.preventDefault();
+        closeModal();
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+}
 
 if (carouselPrevEl) {
     carouselPrevEl.addEventListener('click', () => {

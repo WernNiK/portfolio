@@ -123,6 +123,12 @@
     opacity: 0;
 }
 
+.hero-cta-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
 .hero-cta {
     display: inline-flex;
     align-items: center;
@@ -144,6 +150,34 @@
     animation: fadeIn 1s ease 0.8s forwards;
     opacity: 0;
     z-index: 1;
+}
+
+.hero-cta-icon-only {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.hero-cta-icon-only .hero-cta-icon {
+    font-size: 1.7rem;
+    line-height: 1;
+}
+
+.hero-cta-icon-only::before {
+    display: none;
+}
+
+.hero-cta-icon-only:hover {
+    color: #3cec77;
+    box-shadow: none;
+}
+
+body[data-theme="light"] .hero-cta-icon-only:hover {
+    color: #12a087;
 }
 
 .hero-cta::before {
@@ -644,6 +678,18 @@
     background: linear-gradient(90deg, #3cec77 0%, #20767e 100%);
     font-weight: 600;
     letter-spacing: 0.03em;
+}
+
+.project-modal-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+}
+
+.project-modal-cta-secondary {
+    border: 1px solid #2cb487;
+    background: rgba(6, 24, 38, 0.92);
+    color: #53d8ac;
 }
 
 .project-image-lightbox {
@@ -1175,6 +1221,15 @@ body[data-theme="light"] .project-modal-close {
 body[data-theme="light"] .project-modal-tools li {
     color: #12334d;
     border-color: rgba(8, 156, 87, 0.3);
+}
+
+body[data-theme="light"] .project-modal-cta-secondary {
+    background: #ffffff;
+    color: #1f8c6a;
+}
+
+body[data-theme="light"] #projectModalCta {
+    color: #ffffff;
 }
 
 body[data-theme="light"] .services {

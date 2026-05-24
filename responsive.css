@@ -206,4 +206,17 @@
         border-radius: 8px;
         font-size: 0.86rem;
     }
+
+    .project-modal-actions {
+        grid-template-columns: 1fr;
+        gap: 0.46rem;
+    }
+
+    .hero-cta-group {
+        gap: 0.55rem;
+    }
+
+    .hero-cta-icon-only .hero-cta-icon {
+        font-size: 1.45rem;
+    }
 }
