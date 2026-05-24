@@ -98,11 +98,13 @@
     }
 
     .services-tabs {
+        display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .services-tab {
         border-right: 0;
+        width: 100%;
     }
 
     .services-tab:last-child {
