@@ -98,7 +98,7 @@
     }
 
     .services-tabs {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .services-tab {
@@ -131,5 +131,77 @@
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .project-modal {
+        padding: 0.7rem;
+    }
+
+    .project-modal-card {
+        width: min(420px, 92vw);
+        max-height: 84vh;
+        padding: 2rem 0.7rem 0.7rem;
+        border-radius: 12px;
+        overflow-y: auto;
+    }
+
+    .project-carousel {
+        height: 145px;
+        margin-bottom: 0.65rem;
+    }
+
+    .project-carousel-nav {
+        width: 26px;
+        height: 26px;
+        font-size: 0.82rem;
+    }
+
+    .project-carousel-nav.prev {
+        left: 7px;
+    }
+
+    .project-carousel-nav.next {
+        right: 7px;
+    }
+
+    .project-modal-close {
+        top: 0.35rem;
+        right: 0.55rem;
+        font-size: 1.5rem;
+    }
+
+    .project-modal-title {
+        font-size: 1rem;
+        margin-bottom: 0.45rem;
+        line-height: 1.25;
+    }
+
+    .project-modal-description {
+        font-size: 0.84rem;
+        line-height: 1.45;
+        margin-bottom: 0.75rem;
+    }
+
+    .project-modal-label {
+        font-size: 0.62rem;
+        margin-bottom: 0.32rem;
+    }
+
+    .project-modal-tools {
+        gap: 0.36rem;
+        margin: 0 0 0.7rem;
+    }
+
+    .project-modal-tools li {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.66rem;
+    }
+
+    .project-modal-cta {
+        padding: 0.58rem 0.8rem;
+        border-radius: 8px;
+        font-size: 0.86rem;
     }
 }
