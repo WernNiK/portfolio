@@ -18,6 +18,12 @@ body {
     position: relative;
 }
 
+body[data-theme="light"] {
+    background:
+        radial-gradient(120% 120% at 85% 44%, rgba(55, 210, 176, 0.2) 0%, rgba(118, 212, 255, 0.14) 34%, rgba(193, 170, 255, 0.13) 58%, rgba(246, 251, 255, 0.96) 100%),
+        linear-gradient(105deg, #f8fcff 0%, #f0f8ff 34%, #ecfaf5 66%, #eef4ff 100%);
+}
+
 img {
     -webkit-user-drag: none;
     user-drag: none;
@@ -35,6 +41,11 @@ body::before {
     pointer-events: none;
     z-index: 10000;
     mix-blend-mode: overlay;
+}
+
+body[data-theme="light"]::before {
+    mix-blend-mode: normal;
+    opacity: 0.22;
 }
 
 
@@ -79,6 +90,42 @@ body::before {
     }
     50% {
         transform: translateX(-50%) translateY(10px);
+    }
+}
+
+@keyframes auroraWaveA {
+    0%, 100% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    50% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes auroraWaveB {
+    0%, 100% {
+        transform: translate3d(100px, 0, 0);
+    }
+    50% {
+        transform: translate3d(-95px, 0, 0);
+    }
+}
+
+@keyframes auroraWaveC {
+    0%, 100% {
+        transform: translate3d(-70px, 0, 0);
+    }
+    50% {
+        transform: translate3d(72px, 0, 0);
+    }
+}
+
+@keyframes auroraWaveD {
+    0%, 100% {
+        transform: translate3d(82px, 0, 0);
+    }
+    50% {
+        transform: translate3d(-78px, 0, 0);
     }
 }
 

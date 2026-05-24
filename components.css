@@ -46,7 +46,16 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.03em;
-    color: #f2f7ff;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.logo:hover,
+.logo:focus-visible {
+    color: var(--color-accent);
+    text-shadow: 0 0 14px var(--color-accent-glow);
+    outline: none;
 }
 
 .nav-links {
@@ -136,12 +145,23 @@ nav {
 
 /* Footer */
 footer {
-    padding: 3rem 4rem;
+    padding: 1.35rem 4rem;
     border-top: 1px solid var(--color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+body[data-theme="light"] nav {
+    background:
+        linear-gradient(180deg, rgba(247, 252, 255, 0.96) 0%, rgba(238, 248, 255, 0.75) 35%, rgba(233, 249, 242, 0.48) 60%, rgba(240, 246, 255, 0) 100%);
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+body[data-theme="light"] .cursor-follower {
+    border-color: rgba(15, 34, 53, 0.2);
 }
 
 .footer-text {

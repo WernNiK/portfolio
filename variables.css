@@ -13,3 +13,15 @@
     --font-body: 'Inter', sans-serif;
     --font-ui: 'Manrope', sans-serif;
 }
+
+body[data-theme="light"] {
+    --color-bg: #f6fbff;
+    --color-bg-soft: #edf7fb;
+    --color-text: #10273a;
+    --color-accent: #14a67a;
+    --color-accent-deep: #2a7fbe;
+    --color-accent-glow: rgba(42, 127, 190, 0.2);
+    --color-secondary: #eff7fb;
+    --color-border: #bfd7e7;
+    --color-muted: #4d6580;
+}

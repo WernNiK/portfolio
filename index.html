@@ -19,7 +19,7 @@
     <div class="cursor-follower"></div>
 
     <nav>
-        <div class="logo">WERNER</div>
+        <div class="logo" id="themeToggle" role="button" tabindex="0" aria-label="Toggle light and dark mode" title="Toggle light and dark mode">WERNER</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
@@ -29,7 +29,19 @@
     </nav>
 
     <section class="hero">
-        <div class="hero-background"></div>
+        <div class="hero-background">
+            <svg class="aurora-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                    <path id="aurora-wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+                </defs>
+                <g class="aurora-parallax">
+                    <use href="#aurora-wave-path" x="48" y="0"></use>
+                    <use href="#aurora-wave-path" x="48" y="3"></use>
+                    <use href="#aurora-wave-path" x="48" y="5"></use>
+                    <use href="#aurora-wave-path" x="48" y="7"></use>
+                </g>
+            </svg>
+        </div>
         <img class="hero-portrait" src="assets/hero/chibime.png" alt="Werner Marc portrait">
         <p class="hero-greeting">Greetings! I'm Werner Marc</p>
         <h1 class="hero-title">Web Developer</h1>
@@ -313,6 +325,19 @@
     </section>
 
     <section id="contact" class="contact">
+        <div class="contact-wave-floor" aria-hidden="true">
+            <svg class="contact-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+                <defs>
+                    <path id="contact-floor-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+                </defs>
+                <g class="contact-floor-parallax">
+                    <use href="#contact-floor-wave" x="48" y="0"></use>
+                    <use href="#contact-floor-wave" x="48" y="3"></use>
+                    <use href="#contact-floor-wave" x="48" y="5"></use>
+                    <use href="#contact-floor-wave" x="48" y="7"></use>
+                </g>
+            </svg>
+        </div>
         <div class="contact-content">
             <h2 class="contact-title">Let's Create<br>Something Amazing</h2>
             <p class="contact-subtitle">Ready to bring your vision to life? Get in touch.</p>
@@ -324,8 +349,8 @@
     </section>
 
     <footer>
-        <p class="footer-text">© 2026 Werner Marc. All rights reserved.</p>
-        </footer>
+        <p class="footer-text">@ 2026 Werner Marc. All rights reserved.</p>
+    </footer>
 
     <script src="cursor.js"></script>
     <script src="smooth-scroll.js"></script>
@@ -336,5 +361,12 @@
     <script src="services-tabs.js"></script>
     <script src="nav-active.js"></script>
     <script src="project-modal.js"></script>
+    <script src="theme-toggle.js"></script>
 </body>
 </html>
+
+
+
+
+
+
